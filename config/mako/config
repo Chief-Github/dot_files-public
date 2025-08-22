@@ -1,0 +1,32 @@
+# Mako Notification Custom Config
+
+# General settings
+font=FiraCode Nerd Font 10
+padding=10
+border-radius=8
+border-size=2
+default-timeout=5000
+history=1
+max-history=20
+icons=1
+
+
+# Positioning
+anchor=top-right
+margin=10
+
+# Colors
+background-color=#2E2B4F  
+text-color=#E6E6FA        
+border-color=#9370DB      
+
+[urgency=low]
+border-color=#4169E1     
+default-timeout=2000
+
+
+[urgency=high]
+background-color=#990000 
+border-color=#FF4444
+text-color=#FFFFFF
+default-timeout=10000
