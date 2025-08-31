@@ -3,15 +3,17 @@
     "layer": "top",
     "position": "top",
     "height": 35,
-    "spacing": 5,
+    "spacing": 3,
     "modules-left": [
       "custom/launcher",
       "privacy",    
+      "tray",
       "hyprland/window",
       "custom/texttwo"
 
     ],
     "modules-center": [
+      "custom/spotify",
       "sway/window",
       "cava",
       "wlr/taskbar"
@@ -28,8 +30,7 @@
       "backlight",
       "keyboard-state",
       "clock",
-      "battery",
-      "tray"
+      "battery"
     ],
     "hyprland/window": {
       "format": "{class}",
@@ -77,7 +78,7 @@
     },
 "clock": {
     "format": "{:%d. %b %H:%M}",
-    "format-alt": "Config made by Chief2fast",
+    "format-alt": "I'll think of something to put here some day",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "month",
@@ -185,7 +186,8 @@
       "tooltip-format": " {ifname} via {gwaddr}",
       "format-linked": " {ifname} (No IP)",
       "format-disconnected":"Disconnected ⚠ {ifname} |",
-      "format-alt": " {ifname}: {ipaddr}/{cidr} |"
+      "format-alt": " {ifname}: {ipaddr}/{cidr} |",
+      "on-click-right": "ip addr show wlan0 | grep -oP '(?<=inet\\s)\\d+(\\.\\d+){3}' | head -n 1 | wl-copy && notify-send 'IP Copied!' 'Local IP address copied to clipboard.'"
     },
     "pulseaudio": {
       "scroll-step": 5,
@@ -205,7 +207,12 @@
       "on-click": "pavucontrol",
       "on-click-right": "spotify-launcher"
     },
-
+    "custom/spotify": {
+      "exec": "~/.config/waybar/scripts/songdetail-waybar.sh",
+      "interval": 1,
+      "format": "{}",
+      "on-click": "playerctl play-pause"
+    },
     "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 15,
@@ -215,7 +222,10 @@
     "on-click-middle": "close",
     "ignore-list": [
 	    "kitty",
-      	    "vesktop"
+      "vesktop",
+      "cava-startup",
+      "matrixterm-startup",
+      "neofetch-startup"
 	    ]
     },
 
@@ -250,10 +260,14 @@
       "ignore": [
         {
           "type": "audio-in",
-          "name": ""
+          "name": "cava"
         },
         {
           "type": "screenshare",
+          "name": ""
+        },
+        {
+          "type": "audio-out",
           "name": ""
         }
       ]
