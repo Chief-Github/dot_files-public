@@ -17,7 +17,7 @@ I made this repository for two main reasons:
 * **Hardware**: Lenovo Thinkpad T480
 
 ## Desktop
-![My Desktop](./2025-08-31-192630_hyprshot.png)
+![My Desktop](images/2025-08-31-192630_hyprshot.png)
 *wallpaper changed for privacy reasons*
 
 
