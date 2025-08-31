@@ -1,19 +1,25 @@
 #!/bin/bash
 echo "----------------------------------------------------"
-echo "Copying files to specified folder"
+echo "copying specified config files to ~/dotfiles"
 echo "----------------------------------------------------"
 DOTFILES_DIR="$HOME/public_dot_files/config"
 cd "$DOTFILES_DIR" || { echo "Dotfiles directory not found!"; exit 1; }
 CONFIGS_TO_BACKUP=(
     "hypr"
     "kitty"
-    "ags"
     "waybar"
     "mako"
     "wofi"
     "Thunar"
     "neofetch"
     "starship.toml"
+    "eww"
+    "swaync"
+    "btop"
+    "cava"
+    "spicetify"
+    "swayosd"
+    "waypaper"
 )
 
 for config in "${CONFIGS_TO_BACKUP[@]}"; do

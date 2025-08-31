@@ -1,0 +1,19 @@
+;; made by Chief-Github
+;; polls
+(defpoll time :interval "1s"  "date '+%H:%M:%S'")
+(defpoll shdate :interval "60s" "date '+%m/%d/%y'")
+;; poll now playing track every second
+(defpoll song :interval "1s" "playerctl metadata --format '  {{title}}' 2>/dev/null || echo 'Nothing playing'")
+
+(defwidget nowplaying []
+  (label :text song :class "nowplaying"))
+
+
+;; widget = two labels stacked vertically
+(defwidget clock []
+  (box :orientation "vertical" :spacing 0 :class "clock-box"
+    (label :text time  :class "clock-time")
+    (label :text shdate :class "clock-date")
+    (nowplaying)))
+
+    
