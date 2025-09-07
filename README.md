@@ -28,14 +28,14 @@ I made this repository for two main reasons:
 * Most wallpaper/backgrounds point to "/wallpaper/firstcar.jpg", please change this to your own img :)
 
 ---
-*This is a work in progress!*
----
 
 *Useful things I've found*
-if you want to have something on your desktop, say cava, and want it pinned to all desktops and
-always in the background (unlike floating tabs), use Kitty + [kittens](https://sw.kovidgoyal.net/kitty/kittens/panel/).
 
-The cool quick panel stuff is all SwayNC, it took me WAY too long to find that out lol
+- if you want to have something on your desktop, say cava, and want it pinned to all desktops and
+  always in the background (unlike floating tabs), use Kitty + [kittens](https://sw.kovidgoyal.net/kitty/kittens/panel/).
 
+- The cool quick panel stuff is all SwayNC, it took me WAY too long to find that out lol
 
+*This is a work in progress!*
+---
 
