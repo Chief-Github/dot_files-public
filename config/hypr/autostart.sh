@@ -2,12 +2,13 @@
 
 kitty --class neofetch-startup --title neofetch-startup --hold sh -lc 'neofetch' &
 sleep 0.5
+#kitty --class matrixterm-startup --title matrixterm-startup -e cmatrix &
 sleep 0.5
-kitty --class cava-startup --title cava-startup --override background_opacity=0.0 --override background_blur=0 -e cava
+kitty --class cava-startup --title cava-startup --override background_opacity=0.0 --override background_blur=0 -e cava &
 sleep 0.5
+kitty conky
 
-
-# OLD
+#OLD
 #sleep 0.5
 #kitty -e btop &
 #sleep 0.5

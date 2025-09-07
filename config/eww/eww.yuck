@@ -1,3 +1,4 @@
 ;; included files
 (include "desktop-time-widget.yuck")
 (include "windows.yuck")
+(include "dashboard.yuck")

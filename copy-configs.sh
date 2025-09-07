@@ -17,9 +17,9 @@ CONFIGS_TO_BACKUP=(
     "swaync"
     "btop"
     "cava"
-    "spicetify"
     "swayosd"
     "waypaper"
+    "conky"
 )
 
 for config in "${CONFIGS_TO_BACKUP[@]}"; do
