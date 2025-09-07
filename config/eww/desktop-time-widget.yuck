@@ -1,4 +1,4 @@
-;; Made by Chief-Github
+;; Made by Chief-Github 
 ;; polls
 (defpoll time :interval "1s"  "date '+%H:%M:%S'")
 (defpoll shdate :interval "60s" "date '+%m/%d/%y'")
