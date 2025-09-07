@@ -1,17 +1,27 @@
-/* Made by Chief-Github */
+
 window {
   background: rgba(20,20,20,0.6);
   border-radius: 12px;
   padding: 8px 12px;
+  background: linear-gradient(90deg, #001eff, #490089);
+
+}
+.clock-box {
+  border: 1px solid rgba(255, 0, 0, 0.1);
 }
 
-/* Clock text */
+
+  /* Clock text */
 .clock-time {
   font-size: 42px;
   font-weight: 700;
   font-family: "JetBrainsMono Nerd Font", monospace;
   color: rgb(89, 108, 255);
+  text-shadow: 0 0 6px #596cff,
+               0 0 12px #8b5cf6,  /* purple */
+               0 0 18px #11274b;  /* lighter blue highlight */
 }
+
 .clock-date {
   font-size: 30px;
   font-weight: 700;
@@ -20,12 +30,22 @@ window {
 }
 
 .nowplaying{
-  font-size: 15px;
+  font-size: 19px;
+  color: rgb(89, 108, 255);
+}
+.weatherwidget{
+  padding: 0px;
   color: rgb(89, 108, 255);
 }
 
 
+
+
+
+
 /* DASHBOARD SCSS */
+
+
 .dashboard {
   background: rgba(14, 9, 23, 0.85);
   border-radius: 20px;
@@ -43,11 +63,6 @@ window {
   color: #aaa;
 }
 
-.nowplayingdash {
-  font-size: 22px;
-  color: #a855f7;
-}
-
 .systemdash {
   font-size: 20px;
   color: #4ade80;
@@ -56,22 +71,4 @@ window {
 .weatherdash {
   font-size: 20px;
   color: #60a5fa;
-}
-
-.cpu-circle {
-  color: #f87171;   /* red */
-  min-width: 80px;
-  min-height: 80px;
-}
-
-.ram-circle {
-  color: #60a5fa;   /* blue */
-  min-width: 80px;
-  min-height: 80px;
-}
-
-.circle-label {
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
 }
