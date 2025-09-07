@@ -10,10 +10,12 @@ I made this repository for two main reasons:
 
 ## My Setup
 * **OS**: Arch Linux
-* **WM**: Hyprland
-* **Bar**: Waybar / AGS
-* **Terminal**: Kitty
-* **Shell**: Bash with Starship
+* **WM**: [Hyprland](https://github.com/hyprwm/Hyprland)
+* **Bar**: [Waybar](https://github.com/Alexays/Waybar)
+* **Widgets**: [Eww](https://github.com/elkowar/eww)
+* **Notifications**: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
+* **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty)
+* **Shell**: Bash with [Starship](https://github.com/starship/starship)
 * **Hardware**: Lenovo Thinkpad T480
 
 ## Desktop
@@ -28,3 +30,13 @@ I made this repository for two main reasons:
 ---
 *This is a work in progress!*
 ---
+
+---
+*Useful things I've found*
+if you want to have something on your desktop, say cava, and want it pinned to all desktops and
+always in the background (unlike floating tabs), use Kitty + [kittens](https://sw.kovidgoyal.net/kitty/kittens/panel/).
+
+The cool quick panel stuff is all SwayNC, it took me WAY too long to find that out...
+---
+
+
