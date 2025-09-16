@@ -20,6 +20,7 @@ CONFIGS_TO_BACKUP=(
     "swayosd"
     "waypaper"
     "conky"
+    "fastfetch"
 )
 
 for config in "${CONFIGS_TO_BACKUP[@]}"; do
