@@ -19,8 +19,8 @@ I made this repository for two main reasons:
 * **Hardware**: Lenovo Thinkpad T480
 
 ## Desktop
-![My Desktop](images/2025-08-31-192630_hyprshot.png)
-*wallpaper changed for privacy reasons*
+![My Desktop](images/2025-09-17-164959_hyprshot.png)
+*wallpaper changed for privacy reasons also I don't live in brighton lol*
 
 
 ## Things to do if you download this
@@ -35,7 +35,6 @@ I made this repository for two main reasons:
   always in the background (unlike floating tabs), use Kitty + [kittens](https://sw.kovidgoyal.net/kitty/kittens/panel/).
 
 - The cool quick panel stuff is all SwayNC, it took me WAY too long to find that out lol
-
 *This is a work in progress!*
 ---
 
