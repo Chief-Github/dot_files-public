@@ -25,6 +25,7 @@ I made this repository for two main reasons:
 
 ## Things to do if you download this
 * Create a screen shots folder in your home directory
+* I use [Cava_waybar](https://aur.archlinux.org/packages/waybar-cava), not the normal waybar, you **WILL** get errors if you don't have this version of waybar
 * Most wallpaper/backgrounds point to "/wallpaper/firstcar.jpg", please change this to your own img :)
 
 ---
