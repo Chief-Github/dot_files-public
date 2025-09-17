@@ -19,7 +19,7 @@ I made this repository for two main reasons:
 * **Hardware**: Lenovo Thinkpad T480
 
 ## Desktop
-![My Desktop](images/2025-09-17-164959_hyprshot.png)
+![My Desktop](images/2025-09-17-165058_hyprshot.png)
 *wallpaper changed for privacy reasons also I don't live in brighton lol*
 
 
