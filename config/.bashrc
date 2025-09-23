@@ -13,5 +13,5 @@ fastfetch --config ~/.config/fastfetch/fastneofetch.jsonc #A smaller fastfetch f
 eval "$(starship init bash)"
 alias ls='lsd -a'
 # alias cat='bat'
-
+alias wpe='linux-wallpaperengine --screen-root eDP-1'
 eval "$(thefuck --alias)"
