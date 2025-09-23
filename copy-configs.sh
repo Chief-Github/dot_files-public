@@ -33,10 +33,13 @@ done
 echo "Syncing: .bashrc"
 rm -f "$DOTFILES_DIR/.bashrc"
 cp "$HOME/.bashrc" "$DOTFILES_DIR/"
+echo "Sycning Firefox css file"
+rm -f "$DOTFILES_DIR/firefox/userChrome.css"
+cp "$HOME/.mozilla/firefox/rlbtk3h4.AI-chatgpt/chrome/userChrome.css" "$DOTFILES_DIR/firefox/"
+rm -f "$DOTFILES_DIR/firefox/userContent.css"
+cp "$HOME/.mozilla/firefox/rlbtk3h4.AI-chatgpt/chrome/userContent.css" "$DOTFILES_DIR/firefox/"
 
-echo "Syncing: .bashrc"
-rm -f "$DOTFILES_DIR/.bashrc"
-cp "$HOME/.bashrc" "$DOTFILES_DIR/"
+
 echo "---------------------------------"
 echo "--- Sync Complete! ---"
 echo "--- now do - git add . ---"
