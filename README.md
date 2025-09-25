@@ -1,6 +1,7 @@
 #  My dotfiles 🐧
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
+I have recently upgraded to a T14S, so if you have an older thinkpad (T480 etc), check out my T480 branch! :)
 
 ## Why This Exists
 
@@ -16,12 +17,12 @@ I made this repository for two main reasons:
 * **Notifications**: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 * **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty)
 * **Shell**: Bash with [Starship](https://github.com/starship/starship)
-* **Hardware**: Lenovo Thinkpad T480
+* **Hardware**: Lenovo Thinkpad T14S
 
 ## Desktop
 ![My Desktop](images/2025-09-17-165058_hyprshot.png)
 *wallpaper changed for privacy reasons also I don't live in brighton lol*
-
+*will be updaing images soon*
 
 ## Things to do if you download this
 * Create a screen shots folder in your home directory
