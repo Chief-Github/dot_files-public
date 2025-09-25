@@ -1,6 +1,7 @@
 #  My dotfiles 🐧
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
+
 I have recently upgraded to a T14S, so if you have an older thinkpad (T480 etc), check out my T480 branch! :)
 
 ## Why This Exists
