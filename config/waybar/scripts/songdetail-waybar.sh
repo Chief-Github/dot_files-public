@@ -1,5 +1,6 @@
 #!/bin/bash
 
-song_info=$(/usr/bin/playerctl metadata --format '{{title}} | ')
+song_info=$(playerctl metadata -i firefox --format '{{title}} | ')
+song_info="${song_info:0:15}"
 
 echo "$song_info"
