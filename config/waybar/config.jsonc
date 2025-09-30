@@ -31,6 +31,7 @@
       "keyboard-state",
       "clock",
       "battery"
+//      "custom/battery"
     ],
     "hyprland/window": {
       "format": "{class}",
@@ -168,6 +169,8 @@
         "warning": 30,
         "critical": 15
       },
+      "bat": ["BAT0"],
+      //"format": "",
       "format": "{icon}  {capacity}%",
       "format-charging": "  {capacity}% ",
       "format-plugged": "  {capacity}% ",
@@ -180,16 +183,14 @@
         ""
       ]
     },
-    "battery#bat2": {
-      "bat": "BAT2"
-    },
     "network": {
       "format-wifi": "{essid} ({signalStrength}%)     |",
       "format-ethernet": " {ifname}",
       "tooltip-format": " {ifname} via {gwaddr}",
       "format-linked": " {ifname} (No IP)",
-      "format-disconnected":"Disconnected ⚠ {ifname} |",
-      "format-alt": " {ifname}: {ipaddr}/{cidr} |",
+      "format-disconnected":"Disconnected ⚠ {ifname} ⚠",
+      "format-alt": "xxxxxx-xxxx ({signalStrength}%)     |",
+//      "format-alt": " {ifname}: {ipaddr}/{cidr} |",
       "on-click-right": "ip addr show wlan0 | grep -oP '(?<=inet\\s)\\d+(\\.\\d+){3}' | head -n 1 | wl-copy && notify-send 'IP Copied!' 'Local IP address copied to clipboard.'"
     },
     "pulseaudio": {
@@ -215,6 +216,10 @@
       "interval": 1,
       "format": "{}",
       "on-click": "playerctl play-pause"
+    },
+    "custom/battery": {
+      //"exec": "~/.config/waybar/scripts/Both_batts.sh",
+      //"interval": 30
     },
     "wlr/taskbar": {
     "format": "{icon}",
