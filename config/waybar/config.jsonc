@@ -8,12 +8,13 @@
       "custom/launcher",
       "privacy",    
       "tray",
+      "custom/weather",
       "hyprland/window",
       "custom/texttwo"
 
     ],
     "modules-center": [
-      "custom/spotify",
+//      "custom/spotify",
       "sway/window",
       "cava",
       "wlr/taskbar"
@@ -31,7 +32,6 @@
       "keyboard-state",
       "clock",
       "battery"
-//      "custom/battery"
     ],
     "hyprland/window": {
       "format": "{class}",
@@ -67,8 +67,15 @@
       "tooltip": true,
       "tooltip-format": "{app}: {title}"
     },
+    "custom/weather": {
+      "exec": "~/.config/waybar/scripts/weather.py",      
+      "interval": 600,
+      "return-type": "json",
+      "tooltip": true,
+      "on-click": "gnome-weather"
+    },
     "idle_inhibitor": {
-      "format": " {icon}",
+      "format": "{icon}",
       "format-icons": {
         "activated": "",
         "deactivated": ""
@@ -216,10 +223,6 @@
       "interval": 1,
       "format": "{}",
       "on-click": "playerctl play-pause"
-    },
-    "custom/battery": {
-      //"exec": "~/.config/waybar/scripts/Both_batts.sh",
-      //"interval": 30
     },
     "wlr/taskbar": {
     "format": "{icon}",
