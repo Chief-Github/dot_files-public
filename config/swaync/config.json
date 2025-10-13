@@ -40,9 +40,9 @@
     "notifications",
     "dnd",
     "buttons-grid",
-    "volume",
     "backlight",
-    "mpris"
+    "mpris",
+    "volume"
   ],
   "widget-config": {
     "notifications": {},
