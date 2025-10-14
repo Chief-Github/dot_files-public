@@ -1,4 +1,4 @@
-#  My dotfiles 🐧!
+#  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dot+files)](https://git.io/typing-svg)
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
 
