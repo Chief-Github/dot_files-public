@@ -26,13 +26,30 @@ I have finally got around to adding themes!! :D, enjoy!
 |:--:|:--:|:--:|
 | ![Theme Purple](images/Theme_0.png) | ![Theme Holiday](images/Theme_1.png) | ![Theme Sunset](images/Theme_2.png) |
 
-
-*wallpaper changed for privacy reasons also I don't live in London lol*
+bigger images below. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Down.png" alt="Backhand Index Pointing Down" width="25" height="25" />
 
 <details>
-  <summary>Sway_nc</summary>
+  <summary>💜 Purple Theme</summary>
+
+  ![Theme Purple](images/Theme_0.png)
+
 </details>
 
+<details>
+  <summary>🌊 Holiday Theme</summary>
+
+  ![Theme Holiday](images/Theme_1.png)
+
+</details>
+
+<details>
+  <summary>🌅 Sunset Theme</summary>
+
+  ![Theme Sunset](images/Theme_2.png)
+
+</details>
+
+*wallpaper changed for privacy reasons also I don't live in London lol*
 
 ## Things to do if you download this
 * Create a screen shots folder in your home directory
