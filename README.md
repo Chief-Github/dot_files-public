@@ -25,6 +25,7 @@ I have finally got around to adding themes!! :D, enjoy!
 | Purple 💜 | Holiday 🌊 | Sunset 🌅 |
 |:--:|:--:|:--:|
 | ![Theme Purple](images/Theme_0.png) | ![Theme Holiday](images/Theme_1.png) | ![Theme Sunset](images/Theme_2.png) |
+
 *wallpaper changed for privacy reasons also I don't live in brighton lol*
 
 
