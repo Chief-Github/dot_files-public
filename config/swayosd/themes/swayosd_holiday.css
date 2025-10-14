@@ -1,0 +1,56 @@
+/********************************
+    Made by Chief-Github 
+https://github.com/Chief-Github
+*********************************/
+window#osd {
+  border-radius: 100px;
+  border: none;
+  background: rgba(45, 83, 119, 0.3); /* translucent deep purple background */
+
+}
+
+window#osd * {
+  background-clip: padding-box; /* ensure corners clip properly */
+}
+
+
+window#osd #container {
+  margin: 8px;
+  padding: 6px;
+  background: transparent;
+}
+
+window#osd image {
+  -gtk-icon-transform: scale(0.7);
+}
+
+window#osd image,
+window#osd label {
+  color: #EAF4FF; 
+}
+
+window#osd progressbar:disabled,
+window#osd image:disabled {
+  opacity: 0.5;
+}
+
+window#osd progressbar {
+  min-height: 6px;
+  border-radius: 999px;
+  background: transparent;
+  border: none;
+}
+
+window#osd trough {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+window#osd progress {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background: #3587fa;
+}
