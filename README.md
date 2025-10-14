@@ -1,4 +1,4 @@
-#  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dotfiles+%F0%9F%90%A7!)](https://git.io/typing-svg)
+![Intro_gif](images/Cool.gif)
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
 
@@ -46,3 +46,4 @@ I have finally got around to adding themes!! :D, enjoy!
 *This is a work in progress!*
 ---
 
+#  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dotfiles+%F0%9F%90%A7!)](https://git.io/typing-svg)
