@@ -51,5 +51,4 @@ I have finally got around to adding themes!! :D, enjoy!
 ---
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dotfiles+%F0%9F%90%A7!)](https://git.io/typing-svg)
-
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
