@@ -1,13 +1,86 @@
-/* ChatGPT custom theme */
-/* Originally made by jwpat */
-/* Modified by Chief-Github */
+/***********************
+   Made by Chief-github
+   ********************/
 
 
-#TabsToolbar,
-#nav-bar,
-#PersonalToolbar,
-#titlebar {
-  visibility: collapse !important;
+#menupopup,
+#popup {
+  background-color: rgba(30, 30, 30, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  border: none !important;
 }
 
+
+#main-window {
+  background-color: #00000077 !important;
+}
+
+#urlbar-searchmode-switcher,
+#identity-icon-box {
+  background: transparent !important;
+  background-color: none !important;
+}
+
+
+browser {
+  background: linear-gradient(#262834, #262834);
+  border-radius: 6px;
+}
+
+body,
+#navigator-toolbox,
+#nav-bar,
+#browser,
+#tabbrowser-tabpanels,
+#tabbrowser-tabs,
+#sidebar-main,
+body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+}
+
+
+body:has(#urlbar[open]) {
+  #tabbrowser-tabpanels,
+  #PlacesToolbarItems,
+  #import-button,
+  /*#tabbrowser-tabs,*/
+  #sidebar-main{
+    pointer-events: none;
+    filter: blur(10px) brightness(70%) !important;
+  }
+}
+
+#urlbar-results .urlbarView-row:hover {
+  background-color: rgba(46, 23, 108, 0.40) !important; /* tint */
+}
+
+body:has(#urlbar[open]) #nav-bar,
+#urlbar-results .urlbarView-row:first-child{
+  background-color: rgba(0, 0, 0, 0.3) !important; /* tint */
+ 
+}
+
+
+#urlbar-container,
+#search-container {
+	padding: 0px !important;
+  border-radius: 6px;
+}
+
+#searchbar,
+.urlbar-background {
+	background-color: transparent !important;
+	border-radius: transparent !important;
+	box-shadow: none !important;
+  
+}
+
+
+.urlbar {
+	height: 33px !important;
+	margin: 0 !important;
+	font-size: 13px !important;
+}
 
