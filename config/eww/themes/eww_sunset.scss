@@ -1,0 +1,77 @@
+/* made by Chief-Github */
+/* Make the window visible while testing */
+window {
+  background: rgba(26,17,16,0.6);
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #FF784F, #FFD369);
+
+}
+.clock-box {
+  border: 1px solid rgba(255, 200, 87, 0.2);
+}
+
+
+  /* Clock text */
+.clock-time {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  color: #FFD369;
+  text-shadow: 0 0 6px #FF784F,        /* coral glow */
+               0 0 12px #B34700,       /* deep orange glow */
+               0 0 18px #6A1B00;  
+}
+
+.clock-date {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  color: #FFE6A7;
+}
+
+.nowplaying{
+  font-size: 19px;
+  color: #FFE6A7;
+}
+.weatherwidget{
+  padding: 0px;
+  color: #3c9eff; /* light sky blue, contrasts with orange */
+  font-weight: 600;
+  text-shadow: 0 0 4px #002B5B,  /* subtle dark blue shadow */
+               0 0 8px rgba(0, 43, 91, 0.6); /* glow for readability */
+}
+
+
+
+
+
+/* DASHBOARD SCSS */
+
+
+.dashboard {
+  background: rgba(14, 9, 23, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.clock-timedash {
+  font-size: 64px;
+  font-weight: 700;
+  color: #6200ff;
+}
+
+.clock-datedash {
+  font-size: 28px;
+  color: #aaa;
+}
+
+.systemdash {
+  font-size: 20px;
+  color: #4ade80;
+}
+
+.weatherdash {
+  font-size: 20px;
+  color: #60a5fa;
+}
