@@ -1,4 +1,4 @@
-#  My dotfiles 🐧
+#  My dotfiles 🐧!
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
 
@@ -20,10 +20,13 @@ I made this repository for two main reasons:
 * **Shell**: Bash with [Starship](https://github.com/starship/starship)
 * **Hardware**: Lenovo Thinkpad T14S
 
-## Desktop
-![My Desktop](images/2025-09-17-165058_hyprshot.png)
+## Desktop + themes
+I have finally got around to adding themes!! :D, enjoy!
+| Purple 💜 | Holiday 🌊 | Sunset 🌅 |
+|:--:|:--:|:--:|
+| ![Theme Purple](images/Theme_0.png) | ![Theme Holiday](images/Theme_1.png) | ![Theme Sunset](images/Theme_2.png) |
 *wallpaper changed for privacy reasons also I don't live in brighton lol*
-*will be updaing images soon*
+
 
 ## Things to do if you download this
 * Create a screen shots folder in your home directory
