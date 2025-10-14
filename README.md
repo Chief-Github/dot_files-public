@@ -1,4 +1,4 @@
-#  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dot+files)](https://git.io/typing-svg)
+#  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dotfiles+%F0%9F%90%A7!)](https://git.io/typing-svg)
 
 My personal collection of configuration files for my Arch Linux setup running the Hyprland compositer.
 
@@ -25,6 +25,7 @@ I have finally got around to adding themes!! :D, enjoy!
 | Purple 💜 | Holiday 🌊 | Sunset 🌅 |
 |:--:|:--:|:--:|
 | ![Theme Purple](images/Theme_0.png) | ![Theme Holiday](images/Theme_1.png) | ![Theme Sunset](images/Theme_2.png) |
+
 
 *wallpaper changed for privacy reasons also I don't live in brighton lol*
 
