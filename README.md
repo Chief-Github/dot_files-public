@@ -29,10 +29,14 @@ I have finally got around to adding themes!! :D, enjoy!
 
 *wallpaper changed for privacy reasons also I don't live in London lol*
 
+<details>
+  <summary>Sway_nc</summary>
+</details>
+
 
 ## Things to do if you download this
 * Create a screen shots folder in your home directory
-* I use [Cava_waybar](https://aur.archlinux.org/packages/waybar-cava), not the normal waybar, you **WILL** get errors if you don't have this version of waybar
+* I used to use [Cava_waybar](https://aur.archlinux.org/packages/waybar-cava), not the normal waybar, you **WILL** get errors if you don't have this version of waybar, but currently it's **broken**
 * Most wallpaper/backgrounds point to "/wallpaper/firstcar.jpg", please change this to your own img :)
 
 ---
@@ -47,3 +51,5 @@ I have finally got around to adding themes!! :D, enjoy!
 ---
 
 #  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=A33AF7&width=435&lines=Chief's+dotfiles+%F0%9F%90%A7!)](https://git.io/typing-svg)
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
