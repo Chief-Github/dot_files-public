@@ -21,6 +21,7 @@ CONFIGS_TO_BACKUP=(
     "waypaper"
     "conky"
     "fastfetch"
+    "wlogout"
 )
 
 for config in "${CONFIGS_TO_BACKUP[@]}"; do
