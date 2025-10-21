@@ -43,7 +43,7 @@ do_change_sunset() {
 do_change_to_car() {
   pkill -9 conky 2>/dev/null || true
   pkill -9 cava 2>/dev/null || true
-  do_set_custom_wall "purple/firstcar.jpg"
+#  do_set_custom_wall "purple/firstcar.jpg"
   set_theme "purple"
   (conky  & disown) >/dev/null 2>&1
   do_reload_all "purple_cava.conf"
@@ -129,7 +129,7 @@ do_disable_conky() {
 do_enable_conky() {
   notify-send "Theme Switcher" --transient "Conky enabled"
   if [ $theme = "holiday" ]; then
-    do_set_custom_wall "holiday/Holiday_8.jpg"
+#    do_set_custom_wall "holiday/Holiday_8.jpg"
     (conky & disown) >/dev/null 2>&1
   elif:
     (conky & disown) >/dev/null 2>&1
