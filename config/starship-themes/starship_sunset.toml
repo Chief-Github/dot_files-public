@@ -1,0 +1,127 @@
+#   /********************************
+#       Made by Chief-Github 
+#   https://github.com/Chief-Github
+#   *********************************/
+
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+format = """
+[](color_orange)\
+$os\
+$username\
+[](bg:color_peach fg:color_orange)\
+$directory\
+[](fg:color_peach bg:color_pink)\
+$git_branch\
+$git_status\
+[](fg:color_pink bg:color_purple)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:color_purple bg:color_bg3)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:color_bg3 bg:color_bg1)\
+$time\
+[ ](fg:color_bg1)\
+$line_break$character"""
+
+# Palette: warm sunset tones
+palette = 'sunset_theme'
+
+[palettes.sunset_theme]
+color_fg0   = '#FFF5E1'  # Creamy light for text
+color_bg1   = '#2A1C14'  # Deep brown (shadowed horizon)
+color_bg3   = '#3A2620'  # Slightly lighter brown
+
+color_orange = '#FF784F' # Sunset coral
+color_peach  = '#FFB570' # Soft peach (directory bg)
+color_pink   = '#FF7AB8' # Pink glow (git section)
+color_purple = '#D86EFF' # Sunset magenta (languages)
+color_red    = '#FF4D4D' # Warning red (errors)
+color_yellow = '#FFD369' # Golden yellow (time highlight)
+color_green  = '#A3E072' # Soft spring green (success checks)
+
+# Module styles
+
+[os]
+disabled = false
+style = "bg:color_orange fg:color_fg0"
+
+[username]
+show_always = true
+style_user = "bg:color_orange fg:color_fg0"
+style_root = "bg:color_orange fg:color_fg0"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_bg1 bg:color_peach"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:color_pink"
+format = '[[ $symbol $branch ](fg:color_bg1 bg:color_pink)]($style)'
+
+[git_status]
+style = "bg:color_pink"
+format = '[[($all_status$ahead_behind )](fg:color_bg1 bg:color_pink)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_purple"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_purple)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $context) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg1"
+format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:color_green)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'
