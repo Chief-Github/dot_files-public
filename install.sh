@@ -35,6 +35,8 @@ if ! command -v pacman >/dev/null 2>&1; then
   err "This script is for Arch-based systems (pacman)."; exit 1
 fi
 
+
+
 # sanity check
 if [[ ! -d "$REPO_CONFIG_DIR" ]]; then
   err "Config dir not found: $REPO_CONFIG_DIR"
@@ -49,7 +51,7 @@ show_banner() {
   clear
   cat <<EOF
 ${RED}┌──────────────────────────────────────────────┐${RST}
-${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.01${RST}        ${RED}│${RST}
+${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.1${RST}       ${RED}│${RST}
 ${RED}└──────────────────────────────────────────────┘${RST}
 EOF
   echo
@@ -116,6 +118,8 @@ apps=(
   conky
   rofi
   wofi
+  git
+  base-devel
   pavucontrol
   cava
   nano
@@ -125,7 +129,8 @@ apps=(
   cool-retro-term
   obsidian
   starship
-  btop
+  ark
+  nwg-look
   hyprshot
   hyprpolkitagent
   swappy
@@ -136,6 +141,7 @@ apps=(
   btop
   htop
   swww
+  thefuck
 )
 
 config_files=(
@@ -158,6 +164,15 @@ config_files=(
     "fastfetch"
 )
 
+aur_apps=(
+  waypaper
+  eww
+  qdiskinfo
+  tty-clock
+  wlogout
+)
+
+
 show_banner
 echo "----------------------------------------------------"
 echo "Installing fonts...."
@@ -167,12 +182,31 @@ fc-cache -fv
 
 show_banner
 echo "----------------------------------------------------"
-echo Installing apps
+echo Installing pacman apps
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
 
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service || true
+
+
+show_banner
+echo "----------------------------------------------------"
+echo Installing AUR apps
+echo "----------------------------------------------------"
+if command -v yay >/dev/null 2>&1; then
+  ok "yay already installed."
+  return
+  else
+  tmpdir="$(mktemp -d)"
+  git clone https://aur.archlinux.org/yay.git "$tmpdir/yay"
+  (cd "$tmpdir/yay" && makepkg -si --noconfirm)
+  rm -rf "$tmpdir"
+  yay -S --needed --noconfirm "${aur_apps[@]}"
+fi
+
+
+
 
 show_banner
 warn "!!!current configs will be deleted!!!"
