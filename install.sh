@@ -114,7 +114,6 @@ apps=(
   kitty
   fastfetch
   firefox
-  neofetch
   thunar
   swayosd
   code
@@ -173,6 +172,7 @@ aur_apps=(
   qdiskinfo
   tty-clock
   wlogout
+  neofetch
 )
 
 
@@ -276,7 +276,7 @@ ln -sf ~/.config/rofi/themes/rofi_$theme.rasi ~/.config/rofi/config.rasi
 ln -sf ~/.config/swaync/themes/swaync_$theme.css ~/.config/swaync/style.css
 #ln -sf ~/.config/wlogout/themes/wlogout_$theme.css ~/.config/wlogout/style.css
 ln -sf ~/.config/swayosd/themes/swayosd_$theme.css ~/.config/swayosd/style.css
-
+mv ~/.config/.bashrc ~/
 warn "Remember to log out and back in to apply system changes!"
 echo "${BLU}┌──────────────────────────────────────────────┐${RST}
 ${BLU}│${RST}     ${BOLD}All installed!${RST}                           ${BLU}│${RST}
