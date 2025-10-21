@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-trap 'echo -e "\n\033[31m✖ Error on line $LINENO. Aborting.\033[0m"; exit 1' ERR
+#trap 'echo -e "\n\033[31m✖ Error on line $LINENO. Aborting.\033[0m"; exit 1' ERR
 
 
 # ────────────────────────────────
@@ -189,8 +189,8 @@ echo "Installing pacman apps"
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
 
-sudo systemctl enable --now NetworkManager
-sudo systemctl enable --now bluetooth.service || true
+#sudo systemctl enable --now NetworkManager.service
+#sudo systemctl enable --now bluetooth.service || true
 
 
 show_banner
