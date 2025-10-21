@@ -113,6 +113,7 @@ apps=(
   swaync
   kitty
   fastfetch
+  firefox
   neofetch
   thunar
   swayosd
