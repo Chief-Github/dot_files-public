@@ -113,6 +113,7 @@ apps=(
   swaync
   kitty
   fastfetch
+  neofetch
   thunar
   swayosd
   code
