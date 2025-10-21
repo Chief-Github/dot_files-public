@@ -115,6 +115,7 @@ apps=(
   fastfetch
   thunar
   swayosd
+  code
   conky
   rofi
   wofi
@@ -260,6 +261,10 @@ case "$choice" in
   *) theme="purple" ;;
 esac
 
+mkdir -p ~/wallpaper
+cp -a -- "${SCRIPT_DIR}/wallpaper"/. "~/wallpaper"/
+
+"${SCRIPT_DIR}/config"
 # ---------------- Theme symlinks ----------------
 ln -sf ~/.config/conky/themes/conky_$theme.conf ~/.config/conky/conky.conf
 ln -sf ~/.config/kitty/themes/kitty_$theme.conf ~/.config/kitty/kitty.conf
