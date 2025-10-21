@@ -49,7 +49,7 @@ show_banner() {
   clear
   cat <<EOF
 ${RED}┌──────────────────────────────────────────────┐${RST}
-${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.0${RST}         ${RED}│${RST}
+${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.01${RST}        ${RED}│${RST}
 ${RED}└──────────────────────────────────────────────┘${RST}
 EOF
   echo
@@ -94,6 +94,19 @@ core_fonts=(
 
 apps=(
   hyprland
+  hyprpaper
+  hypridle
+  hyprlock
+  xdg-desktop-portal-hyprland
+  xdg-desktop-portal
+  grim
+  slurp
+  brightnessctl
+  gvfs
+  pipewire 
+  pipewire-alsa 
+  pipewire-pulse 
+  wireplumber
   waybar
   swaync
   kitty
@@ -103,10 +116,25 @@ apps=(
   conky
   rofi
   wofi
+  pavucontrol
+  cava
+  nano
+  bluez
+  blueman
+  bluez-utils
+  cool-retro-term
+  obsidian
   starship
   btop
   hyprshot
+  hyprpolkitagent
   swappy
+  network-manager-applet
+  gnome-weather
+  playerctl
+  spotify-launcher
+  btop
+  htop
   swww
 )
 
@@ -142,6 +170,9 @@ echo "----------------------------------------------------"
 echo Installing apps
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
+
+sudo systemctl enable --now NetworkManager.service
+sudo systemctl enable --now bluetooth.service || true
 
 show_banner
 warn "!!!current configs will be deleted!!!"
