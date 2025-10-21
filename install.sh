@@ -196,7 +196,6 @@ echo Installing AUR apps
 echo "----------------------------------------------------"
 if command -v yay >/dev/null 2>&1; then
   ok "yay already installed."
-  return
   else
   tmpdir="$(mktemp -d)"
   git clone https://aur.archlinux.org/yay.git "$tmpdir/yay"
