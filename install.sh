@@ -66,7 +66,7 @@ if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
     echo ""
 else
     exit 1
-fi
+fi 
 
 sleep 1
 echo -e "${BOLD}${BLU}✨ Starting Dotfile Installation ✨${RST}"
@@ -202,9 +202,9 @@ if command -v yay >/dev/null 2>&1; then
   git clone https://aur.archlinux.org/yay.git "$tmpdir/yay"
   (cd "$tmpdir/yay" && makepkg -si --noconfirm)
   rm -rf "$tmpdir"
-  yay -S --needed --noconfirm "${aur_apps[@]}"
 fi
 
+yay -S --needed --noconfirm "${aur_apps[@]}"
 
 
 
