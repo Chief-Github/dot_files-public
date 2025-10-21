@@ -262,7 +262,8 @@ case "$choice" in
 esac
 
 mkdir -p ~/wallpaper
-cp -a -- "${SCRIPT_DIR}/wallpaper"/. "~/wallpaper"/
+cp -a -- "${SCRIPT_DIR}/wallpaper/." ~/wallpaper/
+
 
 "${SCRIPT_DIR}/config"
 # ---------------- Theme symlinks ----------------
