@@ -185,7 +185,7 @@ fc-cache -fv
 
 show_banner
 echo "----------------------------------------------------"
-echo Installing pacman apps
+echo "Installing pacman apps"
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
 
