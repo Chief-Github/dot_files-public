@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 # Made by Chief-Github
 

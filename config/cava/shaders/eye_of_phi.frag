@@ -1,5 +1,6 @@
 #version 330
 
+// this shader was stolen from shadertoy user ChunderFPV
 
 #define SCALE 8.0
 #define PI radians(180.0)
