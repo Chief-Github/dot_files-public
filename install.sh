@@ -189,8 +189,8 @@ echo "Installing pacman apps"
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
 
-sudo systemctl enable --now NetworkManager.service
-sudo systemctl enable --now bluetooth.service || true
+#sudo systemctl enable --now NetworkManager.service
+#sudo systemctl enable --now bluetooth.service || true
 
 
 show_banner
