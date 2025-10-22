@@ -168,7 +168,7 @@ config_files=(
 
 aur_apps=(
   waypaper
-  eww
+#  eww
   qdiskinfo
   tty-clock
   wlogout
