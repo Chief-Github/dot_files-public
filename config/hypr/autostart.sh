@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kitty +kitten panel --edge=background --instance-group=cava-startup --config=/home/chief/.config/kitty/cava_kitty.conf --margin-top=238 --margin-right=1200 --margin-left=2 --margin-bottom=3 --name=cava-startup cava -p ~/.config/cava/cava_wallpaper.conf &
+kitty +kitten panel --edge=background --instance-group=cava-startup --config=~/.config/kitty/cava_kitty.conf --margin-top=238 --margin-right=1200 --margin-left=2 --margin-bottom=3 --name=cava-startup cava -p ~/.config/cava/cava_wallpaper.conf &
 sleep 0.5
 bash ~/.config/hypr/scripts/NEW_rainbow_border.sh &
 sleep 0.5
