@@ -52,10 +52,8 @@ bigger images below. <img src="https://raw.githubusercontent.com/Tarikul-Islam-A
 *wallpaper changed for privacy reasons also I don't live in London lol*
 
 ## Things to do if you download this
-* Create a screen shots folder in your home directory
-* I used to use [Cava_waybar](https://aur.archlinux.org/packages/waybar-cava), not the normal waybar, you **WILL** get errors if you don't have this version of waybar, but currently it's **broken**
-* Most wallpaper/backgrounds point to "/wallpaper/firstcar.jpg", please change this to your own img :)
-
+* Clone this github repo
+* Run install.sh as a USER, not as root.
 ---
 
 *Useful things I've found*
