@@ -60,7 +60,7 @@ EOF
 
 show_banner
 
-read -rp "${BOLD}This is **very** much in beta, do you want to continue?${RST} (y/n) " answer
+read -rp "${BOLD}This script is still being developed, but it should work :) do you want to continue?${RST} (y/n) " answer
 
 if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
     echo ""
@@ -278,6 +278,7 @@ ln -sf ~/.config/swaync/themes/swaync_$theme.css ~/.config/swaync/style.css
 ln -sf ~/.config/swayosd/themes/swayosd_$theme.css ~/.config/swayosd/style.css
 mv ~/.config/.bashrc ~/
 warn "Remember to log out and back in to apply system changes!"
+warn "Also, make sure to check out ~/.config/hypr/hyprland.con and alter your scaling"
 echo "${BLU}┌──────────────────────────────────────────────┐${RST}
 ${BLU}│${RST}     ${BOLD}All installed!${RST}                           ${BLU}│${RST}
 ${BLU}│${RST}     ${BOLD}!Enjoy! :D${RST}                               ${BLU}│${RST}
