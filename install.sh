@@ -51,7 +51,7 @@ show_banner() {
   clear
   cat <<EOF
 ${RED}┌──────────────────────────────────────────────┐${RST}
-${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.1${RST}       ${RED}│${RST}
+${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.11${RST}       ${RED}│${RST}
 ${RED}└──────────────────────────────────────────────┘${RST}
 EOF
   echo
@@ -168,7 +168,7 @@ config_files=(
 
 aur_apps=(
   waypaper
-#  eww
+  eww-git
   qdiskinfo
   tty-clock
   wlogout
