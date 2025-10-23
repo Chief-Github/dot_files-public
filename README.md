@@ -4,12 +4,6 @@ My personal collection of configuration files for my Arch Linux setup running th
 
 I have recently upgraded to a T14S, so if you have an older thinkpad (T480 etc), check out my T480 branch! :)
 
-## Why This Exists
-
-I made this repository for two main reasons:
-* To learn more about Git and GitHub.
-* To make it easy for my dad (and you!) to download and try out my configs!
-
 ## My Setup
 * **OS**: Arch Linux
 * **WM**: [Hyprland](https://github.com/hyprwm/Hyprland)
