@@ -1,4 +1,4 @@
-# My custom blue and purple theme
+# Made by Chief-Github
 
 "$schema" = 'https://starship.rs/config-schema.json'
 add_newline = false
