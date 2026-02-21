@@ -18,6 +18,7 @@ Disableconky='Disable conky'
 Enableconky='Enable conky'
 reloadall='Reload all'
 debug='debug'
+showfps='showfps'
 
 theme=$(<"$HOME/.config/rofi/current_theme.txt")
 
@@ -94,6 +95,17 @@ do_reload_all() {
       --config="$HOME/.config/kitty/cava_kitty.conf" \
       --margin-top=238 --margin-right=1200 --margin-left=2 --margin-bottom=3 \
       --name=cava-startup cava -p "$HOME/.config/cava/themes/$cavaconf" >/dev/null 2>&1
+}
+
+do_showfps() {
+  debugon = "$(hyprctl getoption debug:overlay | grep 'int:' | awk '{print $2}')"
+  if [debugon == 1];
+    then
+    hyprctl keyword debug:overlay 0
+  else
+    hyprctl keyword debug:overlay 1
+  fi
+
 }
 
 set_theme() {
