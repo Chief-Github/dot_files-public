@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
-
-#   /***********************/
+#    /***********************/
 #      Made by Chief-github
-#    /**********************/
-
-
-# https://github.com/Chief-Github
-
+#    /***********************/
+###################################
+# https://github.com/Chief-Github #
+###################################
 set -euo pipefail
 
 Purple='Car/purple'
@@ -18,7 +16,10 @@ Disableconky='Disable conky'
 Enableconky='Enable conky'
 reloadall='Reload all'
 debug='debug'
-showfps='showfps'
+showfps='Show fps'
+toggleanim='Animation toggle'
+toggleglass='Toggle glass'
+bluelight='Toggle Bluelight Filter'
 
 theme=$(<"$HOME/.config/rofi/current_theme.txt")
 
@@ -97,17 +98,6 @@ do_reload_all() {
       --name=cava-startup cava -p "$HOME/.config/cava/themes/$cavaconf" >/dev/null 2>&1
 }
 
-do_showfps() {
-  debugon = "$(hyprctl getoption debug:overlay | grep 'int:' | awk '{print $2}')"
-  if [debugon == 1];
-    then
-    hyprctl keyword debug:overlay 0
-  else
-    hyprctl keyword debug:overlay 1
-  fi
-
-}
-
 set_theme() {
   local theme="$1"
   ln -sf ~/.config/conky/themes/conky_$theme.conf ~/.config/conky/conky.conf
@@ -140,23 +130,73 @@ do_disable_conky() {
 
 do_enable_conky() {
   notify-send "Theme Switcher" --transient "Conky enabled"
-  if [ $theme = "holiday" ]; then
-#    do_set_custom_wall "holiday/Holiday_8.jpg"
+  if [ $theme = "holiday" ];
+   then
+    do_set_custom_wall "holiday/Holiday_8.jpg"
     (conky & disown) >/dev/null 2>&1
-  elif:
+  else
     (conky & disown) >/dev/null 2>&1
   fi
 }
 
-do_debug() {
-  notify-send "Theme Switcher" --transient "current theme is: $theme"
-  notify-send
+do_showfps() {
+  debugon="$(hyprctl getoption debug:overlay | grep 'int:' | awk '{print $2}')"
+  if [ "$debugon" = "1" ];
+  then
+    hyprctl keyword debug:overlay 0 >/dev/null 2>&1
+  else
+    hyprctl keyword debug:overlay 1 >/dev/null 2>&1
+  fi
 }
+
+do_toggleanim() {
+  animon="$(hyprctl getoption animations:enabled | grep 'int:' | awk '{print $2}')"
+  if [ "$animon" = "1" ];
+  then
+    hyprctl keyword animations:enabled 0 >/dev/null 2>&1
+  else
+    hyprctl keyword animations:enabled 1 >/dev/null 2>&1
+  fi
+}
+
+do_debug() {
+  bluron="$(hyprctl getoption decoration:blur:enabled | grep 'int:' | awk '{print $2}')"
+  animon="$(hyprctl getoption animations:enabled | grep 'int:' | awk '{print $2}')"
+  
+  notify-send "Theme Switcher" --transient "current theme is: $theme \nblur is set to $bluron\nanim is set to $animon"
+
+}
+
+do_toggleglass(){
+  bluron="$(hyprctl getoption decoration:blur:enabled | grep 'int:' | awk '{print $2}')"
+  if [ "$bluron" = "1" ]; then
+    hyprpm enable hyprglass >/dev/null 2>&1
+    sleep 0.3
+    hyprctl keyword decoration:blur:enabled 0 >/dev/null 2>&1
+    notify-send "Theme Switcher" --transient "Glass toggled ✅"
+  else
+    hyprpm disable hyprglass >/dev/null 2>&1
+    sleep 0.3
+    hyprctl keyword decoration:blur:enabled 1 >/dev/null 2>&1
+    notify-send "Theme Switcher" --transient "Glass toggled ✅"
+  fi
+}
+
+
+do_bluelight(){
+  if pgrep -x hyprsunset > /dev/null; then
+      pkill hyprsunset                                                                                                                                                     
+  else
+      setsid -f hyprsunset -t 4500 >/dev/null 2>&1
+                                                                                                                                                       
+  fi
+}
+
 
 case "${ROFI_RETV:-0}" in
   0)
-    # First run: print menu entries
-    printf '%s\n' "$Purple" "$Sunset" "$holiday" "----------" "$random_theme_wallpaper" "----------" "$Disableconky" "$Enableconky" "----------" "$reloadall" "$debug"
+    #entries
+    printf '%s\n' "$Purple" "$Sunset" "$holiday" "----------" "$random_theme_wallpaper" "----------" "$Disableconky" "$Enableconky" "----------" "$debug" "$showfps" "$toggleanim" "$toggleglass" "$bluelight"
     # old '%s\n%s\n%s\n%s\n%s\n'
     ;;
   1)
@@ -169,6 +209,10 @@ case "${ROFI_RETV:-0}" in
       "$Disableconky") do_disable_conky ;;
       "$Enableconky") do_enable_conky ;;
       "$debug") do_debug ;;
+      "$showfps") do_showfps;;
+      "$toggleanim") do_toggleanim;;
+      "$toggleglass") do_toggleglass;;
+      "$bluelight") do_bluelight;;
     esac
     ;;
 esac
