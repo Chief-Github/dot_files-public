@@ -14,6 +14,7 @@ CONFIGS_TO_BACKUP=(
     "neofetch"
     "starship.toml"
     "eww"
+    "matugen"
     "swaync"
     "btop"
     "cava"
