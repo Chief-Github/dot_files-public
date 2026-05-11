@@ -34,8 +34,9 @@ button {
 button:focus, button:active, button:hover {
 	background-color: #FF784F;
 	outline-style: none;
-	border-radius: 4rem;
-	margin: 2rem;
+	border-radius: 5rem;
+	background-position: center 20%;
+/*	margin: 2rem; */
 }
 
 #lock {
