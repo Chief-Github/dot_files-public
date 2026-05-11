@@ -33,7 +33,7 @@ https://github.com/Chief-Github
       "pulseaudio",
       "idle_inhibitor",
       "backlight",
-      "keyboard-state",
+//      "keyboard-state",
       "clock",
       "battery"
     ],
@@ -49,15 +49,15 @@ https://github.com/Chief-Github
       "on-click": "wofi --show drun",
       "tooltip": false
     },
-    "keyboard-state": {
+/*    "keyboard-state": {
       "numlock": true,
       "capslock": true,
       "format": "{name} {icon}",
       "format-icons": {
         "locked": "",
-        "unlocked": ""
-      }
-    },
+        "unlocked": "" 
+      } 
+    }, */
     "sway/mode": {
       "format": "<span style=\"italic\">{}</span>"
     },
@@ -206,7 +206,7 @@ https://github.com/Chief-Github
     },
     "pulseaudio": {
       "scroll-step": 5,
-      "format": "{icon}   {volume}%  {format_source}",
+      "format": "{icon}  {volume}%  {format_source}",
       "format-bluetooth": " {icon} {volume}% {format_source}",
       "format-bluetooth-muted": "  {icon} {format_source}",
       "format-muted": "  {format_source}",
