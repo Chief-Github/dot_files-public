@@ -26,3 +26,4 @@ alias ccc='cd ~/scratch && claude'
 #alias gen=$'matugen image "$(swww query | grep -oP \'(?<=image: ).*\')"' && hyprctl keyword general:col.active_border $(cat ~/.config/hypr/matugen_colors.txt) 360deg /dev/null 2>&1
 
 alias gen='matugen image "$(swww query | grep -oP '"'"'(?<=image: ).*'"'"')" && hyprctl keyword general:col.active_border $(cat ~/.config/hypr/matugen_colors.txt) 360deg'
+alias lsl="lsd -al"
