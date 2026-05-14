@@ -1,0 +1,72 @@
+###################################
+###### MADE BY CHIEF-GITHUB #######
+# https://github.com/Chief-Github #
+###################################
+
+[config]
+scheme = "scheme-tonal-spot"
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/colours.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.conf'
+output_path = '~/.config/waybar/colours.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava.conf'
+output_path = '~/.config/cava/themes/dynamic_cava.conf'                                            
+post_hook = 'pkill -USR1 cava' 
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi.rasi'
+output_path = '~/.config/rofi/themes/rofi_dynamic.rasi'
+
+[templates.conky]
+input_path = '~/.config/matugen/templates/conky.conf'
+output_path = '~/.config/conky/themes/conky_dynamic.conf'
+
+[templates.starship]
+input_path = '~/.config/matugen/templates/starship.toml'
+output_path = '~/.config/starship-themes/starship_dynamic.toml'
+
+[templates.eww]
+input_path = '~/.config/matugen/templates/eww.scss'
+output_path = '~/.config/eww/themes/eww_dynamic.scss'
+post_hook = 'eww reload'
+
+[templates.swaync]
+input_path = '~/.config/matugen/templates/swaync.css'
+output_path = '~/.config/swaync/themes/swaync_dynamic.css'
+post_hook = 'swaync-client -rs'
+
+[templates.wlogout]
+input_path = '~/.config/matugen/templates/wlogout.css'
+output_path = '~/.config/wlogout/themes/wlogout_dynamic.css'
+
+[templates.swayosd]
+input_path = '~/.config/matugen/templates/swayosd.css'
+output_path = '~/.config/swayosd/themes/swayosd_dynamic.css'
+
+[templates.hyprland_border]
+input_path = '~/.config/matugen/templates/hyprland_border.txt'
+output_path = '~/.config/hypr/matugen_colors.txt'
+
+[templates.discord]
+input_path = '~/.config/matugen/templates/discord.css'
+output_path = '~/.config/Vencord/themes/Chief_custom_gen.css'
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/dynamic.theme'
+
+[templates.gtk4]     
+input_path = '~/.config/matugen/templates/gtk.css'
+output_path = '~/.config/gtk-4.0/matugen_colors.css'                                         
+                                                                                               
+[templates.gtk3]                                                                             
+input_path = '~/.config/matugen/templates/gtk.css'                                           
+output_path = '~/.config/gtk-3.0/matugen_colors.css'
