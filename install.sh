@@ -51,7 +51,7 @@ show_banner() {
   clear
   cat <<EOF
 ${RED}┌──────────────────────────────────────────────┐${RST}
-${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.11${RST}       ${RED}│${RST}
+${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.12${RST}       ${RED}│${RST}
 ${RED}└──────────────────────────────────────────────┘${RST}
 EOF
   echo
@@ -144,6 +144,7 @@ apps=(
   htop
   swww
   thefuck
+  mako
 )
 
 config_files=(
@@ -173,6 +174,7 @@ aur_apps=(
   tty-clock
   wlogout
   neofetch
+  matugen
 )
 
 
@@ -189,8 +191,8 @@ echo "Installing pacman apps"
 echo "----------------------------------------------------"
 sudo pacman -S --needed --noconfirm "${apps[@]}"
 
-#sudo systemctl enable --now NetworkManager.service
-#sudo systemctl enable --now bluetooth.service || true
+sudo systemctl enable --now NetworkManager.service
+sudo systemctl enable --now bluetooth.service || true
 
 
 show_banner
@@ -278,7 +280,7 @@ ln -sf ~/.config/swaync/themes/swaync_$theme.css ~/.config/swaync/style.css
 ln -sf ~/.config/swayosd/themes/swayosd_$theme.css ~/.config/swayosd/style.css
 mv ~/.config/.bashrc ~/
 warn "Remember to log out and back in to apply system changes!"
-warn "Also, make sure to check out ~/.config/hypr/hyprland.con and alter your scaling"
+warn "Also, make sure to check out ~/.config/hypr/hyprland.conf and alter your scaling"
 echo "${BLU}┌──────────────────────────────────────────────┐${RST}
 ${BLU}│${RST}     ${BOLD}All installed!${RST}                           ${BLU}│${RST}
 ${BLU}│${RST}     ${BOLD}!Enjoy! :D${RST}                               ${BLU}│${RST}
