@@ -1,0 +1,163 @@
+/*****************************************/
+/****** MADE BY CHIEF-GITHUB *************/
+/* matugen template -> Obsidian snippet  */
+/* generated file - edit the template at */
+/* ~/.config/matugen/templates/obsidian.css */
+/*****************************************/
+
+.theme-dark {
+    /* base ramp - most of the UI derives from these */
+    --color-base-00: {{colors.surface.dark.hex}};                   /* editor / primary bg */
+    --color-base-10: {{colors.surface_container_low.dark.hex}};     /* secondary-alt bg */
+    --color-base-20: {{colors.surface_container.dark.hex}};         /* sidebar / secondary bg */
+    --color-base-25: {{colors.surface_container_high.dark.hex}};    /* hover surfaces */
+    --color-base-30: {{colors.surface_container_highest.dark.hex}}; /* borders */
+    --color-base-35: {{colors.outline_variant.dark.hex}};           /* stronger borders */
+    --color-base-40: {{colors.outline.dark.hex}};                   /* focused borders */
+    --color-base-50: {{colors.outline.dark.hex}};                   /* faint text */
+    --color-base-60: {{colors.on_surface_variant.dark.hex}};        /* muted text */
+    --color-base-70: {{colors.on_surface_variant.dark.hex}};        /* icons */
+    --color-base-100: {{colors.on_surface.dark.hex}};               /* normal text */
+
+    /* accent */
+    --color-accent: {{colors.primary.dark.hex}};
+    --color-accent-1: {{colors.inverse_primary.dark.hex}};
+    --color-accent-2: {{colors.primary_container.dark.hex}};
+    --interactive-accent: {{colors.primary.dark.hex}};
+    --interactive-accent-hover: {{colors.inverse_primary.dark.hex}};
+    --text-on-accent: {{colors.on_primary.dark.hex}};
+
+    /* headings */
+    --h1-color: {{colors.primary.dark.hex}};
+    --h2-color: {{colors.secondary.dark.hex}};
+    --h3-color: {{colors.tertiary.dark.hex}};
+    --h4-color: {{colors.primary.dark.hex}};
+    --h5-color: {{colors.on_surface_variant.dark.hex}};
+    --h6-color: {{colors.on_surface_variant.dark.hex}};
+
+    /* links */
+    --link-color: {{colors.primary.dark.hex}};
+    --link-color-hover: {{colors.inverse_primary.dark.hex}};
+    --link-external-color: {{colors.tertiary.dark.hex}};
+    --link-external-color-hover: {{colors.inverse_primary.dark.hex}};
+    --link-unresolved-color: {{colors.secondary.dark.hex}};
+
+    /* tags */
+    --tag-color: {{colors.primary.dark.hex}};
+    --tag-color-hover: {{colors.inverse_primary.dark.hex}};
+    --tag-background: {{colors.primary.dark.hex}}1a;
+    --tag-background-hover: {{colors.primary.dark.hex}}33;
+
+    /* code */
+    --code-normal: {{colors.on_surface_variant.dark.hex}};
+    --code-background: {{colors.surface_container_low.dark.hex}};
+    --code-comment: {{colors.outline.dark.hex}};
+    --code-keyword: {{colors.primary.dark.hex}};
+    --code-function: {{colors.tertiary.dark.hex}};
+    --code-string: {{colors.secondary.dark.hex}};
+    --code-value: {{colors.tertiary.dark.hex}};
+    --code-property: {{colors.primary.dark.hex}};
+    --code-operator: {{colors.secondary.dark.hex}};
+    --code-punctuation: {{colors.on_surface_variant.dark.hex}};
+    --code-tag: {{colors.error.dark.hex}};
+    --code-important: {{colors.error.dark.hex}};
+
+    /* graph view */
+    --graph-node: {{colors.primary.dark.hex}};
+    --graph-node-focused: {{colors.inverse_primary.dark.hex}};
+    --graph-node-tag: {{colors.tertiary.dark.hex}};
+    --graph-node-attachment: {{colors.secondary.dark.hex}};
+    --graph-node-unresolved: {{colors.error.dark.hex}};
+    --graph-line: {{colors.outline_variant.dark.hex}};
+    --graph-text: {{colors.on_surface.dark.hex}};
+
+    /* checkboxes */
+    --checkbox-color: {{colors.primary.dark.hex}};
+    --checkbox-color-hover: {{colors.inverse_primary.dark.hex}};
+    --checkbox-marker-color: {{colors.on_primary.dark.hex}};
+
+    /* selection + highlight */
+    --text-selection: {{colors.primary.dark.hex}}40;
+    --text-highlight-bg: {{colors.tertiary.dark.hex}}4d;
+
+    /* misc */
+    --blockquote-border-color: {{colors.primary.dark.hex}};
+    --embed-border-left: {{colors.primary.dark.hex}};
+    --hr-color: {{colors.outline_variant.dark.hex}};
+    --scrollbar-thumb-bg: {{colors.outline.dark.hex}}66;
+    --scrollbar-active-thumb-bg: {{colors.outline.dark.hex}}aa;
+}
+
+.theme-light {
+    /* same mapping - material light tokens invert the ramp for us */
+    --color-base-00: {{colors.surface.light.hex}};
+    --color-base-10: {{colors.surface_container_low.light.hex}};
+    --color-base-20: {{colors.surface_container.light.hex}};
+    --color-base-25: {{colors.surface_container_high.light.hex}};
+    --color-base-30: {{colors.surface_container_highest.light.hex}};
+    --color-base-35: {{colors.outline_variant.light.hex}};
+    --color-base-40: {{colors.outline.light.hex}};
+    --color-base-50: {{colors.outline.light.hex}};
+    --color-base-60: {{colors.on_surface_variant.light.hex}};
+    --color-base-70: {{colors.on_surface_variant.light.hex}};
+    --color-base-100: {{colors.on_surface.light.hex}};
+
+    --color-accent: {{colors.primary.light.hex}};
+    --color-accent-1: {{colors.inverse_primary.light.hex}};
+    --color-accent-2: {{colors.primary_container.light.hex}};
+    --interactive-accent: {{colors.primary.light.hex}};
+    --interactive-accent-hover: {{colors.inverse_primary.light.hex}};
+    --text-on-accent: {{colors.on_primary.light.hex}};
+
+    --h1-color: {{colors.primary.light.hex}};
+    --h2-color: {{colors.secondary.light.hex}};
+    --h3-color: {{colors.tertiary.light.hex}};
+    --h4-color: {{colors.primary.light.hex}};
+    --h5-color: {{colors.on_surface_variant.light.hex}};
+    --h6-color: {{colors.on_surface_variant.light.hex}};
+
+    --link-color: {{colors.primary.light.hex}};
+    --link-color-hover: {{colors.inverse_primary.light.hex}};
+    --link-external-color: {{colors.tertiary.light.hex}};
+    --link-external-color-hover: {{colors.inverse_primary.light.hex}};
+    --link-unresolved-color: {{colors.secondary.light.hex}};
+
+    --tag-color: {{colors.primary.light.hex}};
+    --tag-color-hover: {{colors.inverse_primary.light.hex}};
+    --tag-background: {{colors.primary.light.hex}}1a;
+    --tag-background-hover: {{colors.primary.light.hex}}33;
+
+    --code-normal: {{colors.on_surface_variant.light.hex}};
+    --code-background: {{colors.surface_container_low.light.hex}};
+    --code-comment: {{colors.outline.light.hex}};
+    --code-keyword: {{colors.primary.light.hex}};
+    --code-function: {{colors.tertiary.light.hex}};
+    --code-string: {{colors.secondary.light.hex}};
+    --code-value: {{colors.tertiary.light.hex}};
+    --code-property: {{colors.primary.light.hex}};
+    --code-operator: {{colors.secondary.light.hex}};
+    --code-punctuation: {{colors.on_surface_variant.light.hex}};
+    --code-tag: {{colors.error.light.hex}};
+    --code-important: {{colors.error.light.hex}};
+
+    --graph-node: {{colors.primary.light.hex}};
+    --graph-node-focused: {{colors.inverse_primary.light.hex}};
+    --graph-node-tag: {{colors.tertiary.light.hex}};
+    --graph-node-attachment: {{colors.secondary.light.hex}};
+    --graph-node-unresolved: {{colors.error.light.hex}};
+    --graph-line: {{colors.outline_variant.light.hex}};
+    --graph-text: {{colors.on_surface.light.hex}};
+
+    --checkbox-color: {{colors.primary.light.hex}};
+    --checkbox-color-hover: {{colors.inverse_primary.light.hex}};
+    --checkbox-marker-color: {{colors.on_primary.light.hex}};
+
+    --text-selection: {{colors.primary.light.hex}}40;
+    --text-highlight-bg: {{colors.tertiary.light.hex}}4d;
+
+    --blockquote-border-color: {{colors.primary.light.hex}};
+    --embed-border-left: {{colors.primary.light.hex}};
+    --hr-color: {{colors.outline_variant.light.hex}};
+    --scrollbar-thumb-bg: {{colors.outline.light.hex}}66;
+    --scrollbar-active-thumb-bg: {{colors.outline.light.hex}}aa;
+}

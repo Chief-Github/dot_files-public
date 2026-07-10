@@ -1,0 +1,53 @@
+/* MADE BY CHIEF-GITHUB - matugen -> live spicetify colours.
+ * Written straight into the applied xpui folder so a soft reload
+ * (Ctrl+Shift+R) recolours Spotify with NO full restart.
+ * Mapping matches templates/spicetify.ini (StarryNight). */
+:root {
+    --spice-highlight: {{colors.surface_container_high.dark.hex}};
+    --spice-player: {{colors.surface_container_lowest.dark.hex}};
+    --spice-selected-row: {{colors.on_surface.dark.hex}};
+    --spice-subtext: {{colors.on_surface_variant.dark.hex}};
+    --spice-highlight-elevated: {{colors.surface_container_high.dark.hex}};
+    --spice-misc: {{colors.outline.dark.hex}};
+    --spice-main-elevated: {{colors.surface_container.dark.hex}};
+    --spice-sidebar: {{colors.on_primary.dark.hex}};
+    --spice-tab-active: {{colors.surface_container_high.dark.hex}};
+    --spice-sidebar-alt: {{colors.shadow.dark.hex}};
+    --spice-shooting-star: {{colors.on_surface.dark.hex}};
+    --spice-main: #000000;
+    --spice-button: {{colors.primary.dark.hex}};
+    --spice-button-active: {{colors.inverse_primary.dark.hex}};
+    --spice-notification: {{colors.primary.dark.hex}};
+    --spice-notification-error: {{colors.error.dark.hex}};
+    --spice-star-glow: {{colors.primary.dark.hex}};
+    --spice-text: {{colors.on_surface.dark.hex}};
+    --spice-shadow: {{colors.shadow.dark.hex}};
+    --spice-button-disabled: {{colors.outline.dark.hex}};
+    --spice-star: {{colors.on_surface.dark.hex}};
+    --spice-card: {{colors.surface_container.dark.hex}};
+    --spice-shooting-star-glow: {{colors.primary.dark.hex}};
+
+    --spice-rgb-highlight: {{colors.surface_container_high.dark.red}},{{colors.surface_container_high.dark.green}},{{colors.surface_container_high.dark.blue}};
+    --spice-rgb-player: {{colors.surface_container_lowest.dark.red}},{{colors.surface_container_lowest.dark.green}},{{colors.surface_container_lowest.dark.blue}};
+    --spice-rgb-selected-row: {{colors.on_surface.dark.red}},{{colors.on_surface.dark.green}},{{colors.on_surface.dark.blue}};
+    --spice-rgb-subtext: {{colors.on_surface_variant.dark.red}},{{colors.on_surface_variant.dark.green}},{{colors.on_surface_variant.dark.blue}};
+    --spice-rgb-highlight-elevated: {{colors.surface_container_high.dark.red}},{{colors.surface_container_high.dark.green}},{{colors.surface_container_high.dark.blue}};
+    --spice-rgb-misc: {{colors.outline.dark.red}},{{colors.outline.dark.green}},{{colors.outline.dark.blue}};
+    --spice-rgb-main-elevated: {{colors.surface_container.dark.red}},{{colors.surface_container.dark.green}},{{colors.surface_container.dark.blue}};
+    --spice-rgb-sidebar: {{colors.on_primary.dark.red}},{{colors.on_primary.dark.green}},{{colors.on_primary.dark.blue}};
+    --spice-rgb-tab-active: {{colors.surface_container_high.dark.red}},{{colors.surface_container_high.dark.green}},{{colors.surface_container_high.dark.blue}};
+    --spice-rgb-sidebar-alt: {{colors.shadow.dark.red}},{{colors.shadow.dark.green}},{{colors.shadow.dark.blue}};
+    --spice-rgb-shooting-star: {{colors.on_surface.dark.red}},{{colors.on_surface.dark.green}},{{colors.on_surface.dark.blue}};
+    --spice-rgb-main: 0,0,0;
+    --spice-rgb-button: {{colors.primary.dark.red}},{{colors.primary.dark.green}},{{colors.primary.dark.blue}};
+    --spice-rgb-button-active: {{colors.inverse_primary.dark.red}},{{colors.inverse_primary.dark.green}},{{colors.inverse_primary.dark.blue}};
+    --spice-rgb-notification: {{colors.primary.dark.red}},{{colors.primary.dark.green}},{{colors.primary.dark.blue}};
+    --spice-rgb-notification-error: {{colors.error.dark.red}},{{colors.error.dark.green}},{{colors.error.dark.blue}};
+    --spice-rgb-star-glow: {{colors.primary.dark.red}},{{colors.primary.dark.green}},{{colors.primary.dark.blue}};
+    --spice-rgb-text: {{colors.on_surface.dark.red}},{{colors.on_surface.dark.green}},{{colors.on_surface.dark.blue}};
+    --spice-rgb-shadow: {{colors.shadow.dark.red}},{{colors.shadow.dark.green}},{{colors.shadow.dark.blue}};
+    --spice-rgb-button-disabled: {{colors.outline.dark.red}},{{colors.outline.dark.green}},{{colors.outline.dark.blue}};
+    --spice-rgb-star: {{colors.on_surface.dark.red}},{{colors.on_surface.dark.green}},{{colors.on_surface.dark.blue}};
+    --spice-rgb-card: {{colors.surface_container.dark.red}},{{colors.surface_container.dark.green}},{{colors.surface_container.dark.blue}};
+    --spice-rgb-shooting-star-glow: {{colors.primary.dark.red}},{{colors.primary.dark.green}},{{colors.primary.dark.blue}};
+}

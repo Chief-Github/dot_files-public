@@ -80,6 +80,14 @@ output_path = '~/.config/gtk-3.0/matugen_colors.css'
 input_path = '~/.config/matugen/templates/obsidian.css'
 output_path = '~/notes/.obsidian/snippets/matugen.css'
 
+[templates.spicetify]
+input_path = '~/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/StarryNight/color.ini'
+
+[templates.spicetify_live]
+input_path = '~/.config/matugen/templates/spicetify_colors.css'
+output_path = '~/.local/share/spotify-launcher/install/usr/share/spotify/Apps/xpui/colors.css'
+
 [templates.vscode]
 input_path = '~/.config/matugen/templates/vscode-theme.json'
 output_path = '~/.vscode-oss/extensions/chief.chief-theme-0.0.1/themes/chief-color-theme.json'
