@@ -14,7 +14,7 @@ fastfetch --config ~/.config/fastfetch/fastneofetch.jsonc #A smaller fastfetch f
 eval "$(starship init bash)"
 alias ls='lsd -a'
 # alias cat='bat'
-alias wpe='linux-wallpaperengine --screen-root eDP-1'
+alias wpe='linux-wallpaperengine --screen-root eDP-1 --scaling fill'
 eval "$(thefuck --alias)"
 alias pkexec='pkexec env XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR WAYLAND_DISPLAY=$WAYLAND_DISPLAY GTK_THEME=Adwaita:dark'
 alias mon='sudo airmon-ng start wlan0'
@@ -27,3 +27,4 @@ alias ccc='cd ~/scratch && claude'
 
 alias gen='matugen image "$(swww query | grep -oP '"'"'(?<=image: ).*'"'"')" && hyprctl keyword general:col.active_border $(cat ~/.config/hypr/matugen_colors.txt) 360deg'
 alias lsl="lsd -al"
+alias vencord="bash ~/Downloads/vencord.sh"

@@ -3,7 +3,7 @@
 ;; polls
 (defpoll time :interval "1s"  "date '+%H:%M:%S'")
 (defpoll shdate :interval "60s" "date '+%m/%d/%y'")
-(defpoll wthr :interval "300s" "curl https://wttr.in/?format=3")
+(defpoll wthr :interval "300s" "curl -s 'https://wttr.in/?format=%c+%t'")
 
 ;; poll now playing track every second
 (defpoll song :interval "1s" "playerctl metadata --format '  {{title}}' 2>/dev/null || echo 'Nothing playing'")

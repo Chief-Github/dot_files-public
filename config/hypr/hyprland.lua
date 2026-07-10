@@ -6,13 +6,10 @@
   --  ╚██████╗██║  ██║██║███████╗██║                
   --   ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝╚═╝                
   -- ════════════════════════════════════════════════
-  --   ⚡ Hyprland Dots · Lua V1.0 ⚡               
+  --   ⚡ Hyprland Dots · Lua V1.3 ⚡               
   --   github.com/Chief-Github/Hypr_dots            
   -- ════════════════════════════════════════════════
 
-
-  -- THIS IS STILL A WORK IN PROGRESS --
-  -- NOT ALL SCRIPTS ARE UPLOADED YET --
 
 -- https://wiki.hypr.land/Configuring/Start/
 
@@ -27,11 +24,18 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
+--hl.monitor({
+--    output   = "eDP-1",
+--    mode     = "preferred",
+--    position = "0x0",
+--    scale    = 1.25,
+--})
 hl.monitor({
     output   = "eDP-1",
     mode     = "preferred",
     position = "0x0",
     scale    = 1.25,
+    mirror   = "HDMI-A-1",
 })
 -- fractional scailing can mess up apps.. but its nice.
 -- Also for some reason atm you "need" to put the monitor output name in for fractional
@@ -73,7 +77,8 @@ hl.on("hyprland.start", function ()
   --- APPS ---
   ------------
 --  hl.exec_cmd("firefox -P AI-chatgpt --new-window https://chatgpt.com --name chatgpt") -- claude better...
-  hl.exec_cmd("waybar")
+-- moving to qshell  hl.exec_cmd("waybar")
+  hl.exec_cmd("quickshell")
   hl.exec_cmd("spotify-launcher")
   hl.exec_cmd("kitty --class neofetch-startup --title neofetch-startup --hold sh -lc 'neofetch'")
   hl.exec_cmd("~/.config/hypr/autostart.sh")
@@ -387,6 +392,9 @@ hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("~/.config/hypr/edit_screenshot
 hl.bind(mainMod .. " + minus",     hl.dsp.exec_cmd("~/.config/hypr/scripts/zoom.sh decrease 0.5"), { repeating = true })
 hl.bind(mainMod .. " + equal",     hl.dsp.exec_cmd("~/.config/hypr/scripts/zoom.sh increase 0.5"), { repeating = true })
 hl.bind(mainMod .. " + Backspace", hl.dsp.exec_cmd("~/.config/hypr/scripts/zoom.sh reset"))
+hl.bind(mainMod .. " + slash", hl.dsp.exec_cmd ("~/.config/hypr/scripts/Panic_lol.sh"))
+
+
 hl.bind(mainMod .. " + SHIFT + minus",     hl.dsp.exec_cmd("~/.config/hypr/scripts/blur_change.sh decrease 1"), { repeating = true })
 hl.bind(mainMod .. " + SHIFT + equal",     hl.dsp.exec_cmd("~/.config/hypr/scripts/blur_change.sh increase 1"), { repeating = true })
 hl.bind(mainMod .. " + SHIFT + Backspace", hl.dsp.exec_cmd("~/.config/hypr/scripts/blur_change.sh reset"))
@@ -476,7 +484,7 @@ hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("swayosd-client --brightness rai
 hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("swayosd-client --brightness lower"),                  { locked = true, repeating = true })
 hl.bind(mainMod .. " + ALT + up", hl.dsp.exec_cmd("swayosd-client --output-volume raise"))
 hl.bind(mainMod .. " + ALT + down", hl.dsp.exec_cmd("swayosd-client --output-volume lower"))
-hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprlock"), { locked = true })
+hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprlock --config ~/.config/hypr/hyprlock-current.conf"), { locked = true })
 
 -- Requires playerctl
 hl.bind(mainMod .. " + ALT + right", hl.dsp.exec_cmd("playerctl next"))
@@ -501,6 +509,10 @@ hl.layer_rule({ name = "blur-swaync-cc", match = { namespace = "^(swaync-control
 hl.layer_rule({ name = "blur-swaync-nw", match = { namespace = "^(swaync-notification-window)$" }, blur = true, ignore_alpha = 0 })
 hl.layer_rule({ name = "no-anim-hyprpicker",match = { namespace = "hyprpicker" }, no_anim = true })
 hl.layer_rule({ name = "no-anim-selection",match = { namespace = "selection" },  no_anim = true })
+hl.layer_rule({ name = "quickshell-waybar",match = { namespace = "^(quickshell)$" }, blur = true, ignore_alpha = 0 })
+hl.layer_rule({ name = "Boot_anim",match = { namespace = "^(boot)$" }, no_anim = true, ignore_alpha = 0, blur = true })
+hl.layer_rule({ name = "quickshell-popup",match = { namespace = "^(popup)$" }, blur = true, ignore_alpha = 0 })
+
 
 ------------------
 -- WINDOW RULES --
@@ -592,8 +604,9 @@ local suppressMaximizeRule = hl.window_rule({
 local hour = tonumber(os.date("%H"))
 local color = hour < 6 and "rgb(20,20,60)" or
               hour < 12 and "rgb(138,43,226)" or
-              hour < 18 and "rgb(0,180,100)" or "rgb(60,0,120)"
-hl.config({ general = { col = { active_border = color }}})
+              hour < 15 and "rgb(104, 30, 173)" or
+              hour < 18 and "rgb(60,0,120)"
+--hl.config({ general = { col = { active_border = color }}})
 
 
 --local bat = io.popen("cat /sys/class/power_supply/BAT0/capacity"):read()
@@ -626,8 +639,6 @@ hl.window_rule({
 -- overlayLayerRule:set_enabled(false)
 
 dofile(os.getenv("HOME") .. "/.config/hypr/scripts/event-ws-gaps.lua")
-
-
 
 
 -- Hyprland-run windowrule

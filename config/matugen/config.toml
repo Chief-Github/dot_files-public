@@ -2,7 +2,6 @@
 ###### MADE BY CHIEF-GITHUB #######
 # https://github.com/Chief-Github #
 ###################################
-
 [config]
 scheme = "scheme-tonal-spot"
 
@@ -54,10 +53,16 @@ output_path = '~/.config/swayosd/themes/swayosd_dynamic.css'
 [templates.hyprland_border]
 input_path = '~/.config/matugen/templates/hyprland_border.txt'
 output_path = '~/.config/hypr/matugen_colors.txt'
+post_hook = '''colors=""; for c in $(cat ~/.config/hypr/matugen_colors.txt); do hex="${c#0x}"; colors+="'rgba(${hex:2:6}${hex:0:2})',"; done; hyprctl eval "hl.config({ general = { col = { active_border = { colors = {${colors%,}}, angle = 360 } } } })" > /dev/null 2>&1'''
 
 [templates.discord]
 input_path = '~/.config/matugen/templates/discord.css'
 output_path = '~/.config/Vencord/themes/Chief_custom_gen.css'
+
+[templates.quickshell]
+input_path = '~/.config/matugen/templates/quickshell.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'date > /tmp/.qs_color_trigger'
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
@@ -70,3 +75,16 @@ output_path = '~/.config/gtk-4.0/matugen_colors.css'
 [templates.gtk3]                                                                             
 input_path = '~/.config/matugen/templates/gtk.css'                                           
 output_path = '~/.config/gtk-3.0/matugen_colors.css'
+
+[templates.obsidian]
+input_path = '~/.config/matugen/templates/obsidian.css'
+output_path = '~/notes/.obsidian/snippets/matugen.css'
+
+[templates.vscode]
+input_path = '~/.config/matugen/templates/vscode-theme.json'
+output_path = '~/.vscode-oss/extensions/chief.chief-theme-0.0.1/themes/chief-color-theme.json'
+
+[templates.vscode_settings]
+input_path = '~/.config/matugen/templates/vscode-settings.json'
+output_path = '~/.cache/matugen_vscode_settings.json'
+post_hook = '''settings="$HOME/.config/Code - OSS/User/settings.json"; sed -i '/MATUGEN_START/,/MATUGEN_END/{/MATUGEN_START/b;/MATUGEN_END/b;d}' "$settings"; sed -i "/MATUGEN_START/r $HOME/.cache/matugen_vscode_settings.json" "$settings"'''
