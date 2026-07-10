@@ -15,7 +15,8 @@ I have recently upgraded to a T14S, so if you have an older thinkpad (T480 etc),
 * **Hardware**: Lenovo Thinkpad T14S
 
 ## Desktop + themes
-I have finally got around to adding themes!! :D, enjoy!
+I have finally got around to adding themes!! :D, enjoy! 
+⚠️these images are outdated - new ones to be added soon⚠️
 | Purple 💜 | Holiday 🌊 | Sunset 🌅 |
 |:--:|:--:|:--:|
 | ![Theme Purple](images/Theme_0.png) | ![Theme Holiday](images/Theme_1.png) | ![Theme Sunset](images/Theme_2.png) |
