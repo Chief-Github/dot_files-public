@@ -7,8 +7,9 @@ I have recently upgraded to a T14S, so if you have an older thinkpad (T480 etc),
 ## My Setup
 * **OS**: Arch Linux
 * **WM**: [Hyprland](https://github.com/hyprwm/Hyprland)
-* **Bar**: [Waybar](https://github.com/Alexays/Waybar)
 * **Widgets**: [Eww](https://github.com/elkowar/eww)
+* **Shell + Bar**: [Quickshell](https://quickshell.org/) (NEW!! - older Waybar config still included)
+* **Dynamic colours**: [Matugen](https://github.com/InioX/matugen)
 * **Notifications**: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 * **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty)
 * **Shell**: Bash with [Starship](https://github.com/starship/starship)
