@@ -23,6 +23,7 @@ CONFIGS_TO_BACKUP=(
     "conky"
     "fastfetch"
     "wlogout"
+    "quickshell"
 )
 
 for config in "${CONFIGS_TO_BACKUP[@]}"; do
