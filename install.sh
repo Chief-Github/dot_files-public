@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ########################################
-## Chief-Github's dotfiles installer!! #
+#  Chief-Github's dotfiles installer!! #
 ########################################
 ### https://github.com/Chief-Github ####
 ########################################
@@ -51,7 +51,7 @@ show_banner() {
   clear
   cat <<EOF
 ${RED}┌──────────────────────────────────────────────┐${RST}
-${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.12${RST}       ${RED}│${RST}
+${RED}│${RST}   🧠  ${BOLD}Chief's Dotfile Installer v1.2 ${RST}       ${RED}│${RST}
 ${RED}└──────────────────────────────────────────────┘${RST}
 EOF
   echo
@@ -145,6 +145,9 @@ apps=(
   swww
   thefuck
   mako
+  lsd
+  inter-font
+  mpv
 )
 
 config_files=(
@@ -165,6 +168,7 @@ config_files=(
     "waypaper"
     "conky"
     "fastfetch"
+    "quickshell"
 )
 
 aur_apps=(
@@ -175,6 +179,7 @@ aur_apps=(
   wlogout
   neofetch
   matugen
+  quickshell
 )
 
 
@@ -276,7 +281,7 @@ ln -sf ~/.config/starship-themes/starship_$theme.toml ~/.config/starship.toml
 ln -sf ~/.config/eww/themes/eww_$theme.scss ~/.config/eww/eww.scss
 ln -sf ~/.config/rofi/themes/rofi_$theme.rasi ~/.config/rofi/config.rasi
 ln -sf ~/.config/swaync/themes/swaync_$theme.css ~/.config/swaync/style.css
-#ln -sf ~/.config/wlogout/themes/wlogout_$theme.css ~/.config/wlogout/style.css
+ln -sf ~/.config/wlogout/themes/wlogout_$theme.css ~/.config/wlogout/style.css
 ln -sf ~/.config/swayosd/themes/swayosd_$theme.css ~/.config/swayosd/style.css
 mv ~/.config/.bashrc ~/
 warn "Remember to log out and back in to apply system changes!"
